@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        .main {
+            width: 100%;
+            background-color: aqua;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            /* grid-template-rows: 200px 200px 200px; */
+            grid-template-rows: 200px 200px 200px;
+            grid-row-gap: 20px;
+        }
+        
+        .bg1 {
+            background-color: blueviolet;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        
+        .bg2 {
+            background-color: brown;
+        }
+        
+        .bg3 {
+            background-color: darkblue;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .bg4 {
+            background-color: darkgoldenrod;
+        }
+        
+        .bg5 {
+            background-color: darkgreen;
+        }
+        
+        .bg6 {
+            background-color: darkred;
+            /* grid-area: 2/3/2/3; */
+        }
+        
+        .bg7 {
+            background-color: darkslategray;
+        }
+        
+        .bg8 {
+            background-color: deepskyblue;
+        }
+        
+        .bg9 {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bg1">bg 1</div>
+        <div class="bg2">bg 2</div>
+        <div class="bg3">bg 3</div>
+        <div class="bg4">bg 4</div>
+        <div class="bg5">bg 5</div>
+        <div class="bg6">bg 6</div>
+        <div class="bg7">bg 7</div>
+        <div class="bg8">bg 8</div>
+        <div class="bg9">bg 9</div>
+    </div>
+</body>
+
+</html>
